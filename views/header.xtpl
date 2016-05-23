@@ -1,0 +1,24 @@
+    <nav class="main-navbar navbar navbar-default {{#if(isHome)}}navbar-fixed-top{{/if}}">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li {{#if(isHome)}}class="homeM"{{/if}}><a href="{{#if(!isHome)}}/{{/if}}#home">首页</a></li>
+            <li {{#if(isHome)}}class="homeM"{{/if}}><a href="{{#if(!isHome)}}/{{/if}}#about">关于我们</a></li>
+            <li {{#if(isHome)}}class="homeM"{{/if}}><a href="{{#if(!isHome)}}/{{/if}}#cases">效果案例</a></li>
+            <!-- <li {{#if (menu==="预算助手")}}class="active"{{/if}}><a href="/budget">预算助手</a></li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a>销售热线： 15925691513</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

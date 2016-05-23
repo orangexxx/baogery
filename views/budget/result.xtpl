@@ -1,0 +1,55 @@
+{{extend("../base")}}
+{{#block ("head")}}
+	<link href="/css/budget/result.css" rel="stylesheet">
+{{/block}}
+{{#block ("header")}}
+	{{include ("../header", {menu: "预算助手"})}}
+{{/block}}
+
+{{#block ("body")}}
+	<div class="container budget-result">
+		<div class="title">
+			<div class="headbanner">
+			<img class="logo" src="/img/logo.png">
+			<em>做家具，交朋友</em>
+			</div>
+			<h1>报 价 单</h1>
+		</div>
+		<div class="user-info row">
+			<label class="col-sm-3">顾客姓名：{{user.name}}</label> 
+			<label class="col-sm-3">联系方式：{{user.phone}}</label> 
+			<label class="col-sm-6">小区名称： {{user.addr}}</label>
+		</div>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>项目</th>
+				<th>材料</th>
+				<th>数量</th>
+				<th>单价</th>
+				<th>总价</th>
+			</thead>
+			<tbody>
+				{{#each (data.list)}}
+				<tr>
+					<td>{{name}}</td>
+					<td>{{type}}</td>
+					<td>{{count}}</td>
+					<td>{{price}}</td>
+					<td>{{totalPrice}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+		<div class="summary">
+			总价： {{data.totalPrice}} <br/>
+			{{#if (discount !== 1)}}
+				折扣： {{discount}} <br/>
+				折后总价： {{resultPrice}}
+			{{/if}}
+		</div>
+		<button class="btn btn-primary print">打印</div>
+	</div>
+{{/block}}
+{{#block ("js")}}
+	<script src="/js/budget/result.js"></script>
+{{/block}}

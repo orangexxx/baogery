@@ -1,0 +1,5 @@
+{{extend ("./base")}}
+
+{{#block("body")}}
+error!
+{{/block}}

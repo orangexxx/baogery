@@ -1,0 +1,126 @@
+{
+  "cupboard": {
+    "stone": {
+      "type1": {
+        "name": "力剑石英石-单色",
+        "price": 418
+      },
+      "type2": {
+        "name": "力剑石英石-双色",
+        "price": 528
+      },
+      "type3": {
+        "name": "力剑石英石-金钻",
+        "price": 678
+      }
+    },
+    "door": {
+      "type1": {
+        "name": "模压门",
+        "price": 198
+      },
+      "type2": {
+        "name": "烤漆门",
+        "price": 268
+      },
+      "type3": {
+        "name": "晶钢门",
+        "price": 578
+      },
+      "type4": {
+        "name": "橡胶木",
+        "price": 568
+      },
+      "type5": {
+        "name": "南美樱桃",
+        "price": 648
+      },
+      "type6": {
+        "name": "美国红橡",
+        "price": 698
+      },
+      "type7": {
+        "name": "北美樱桃",
+        "price": 818
+      }
+    },
+    "upBody": {
+      "type1": {
+        "name": "多层板",
+        "price": 658
+      },
+      "type2": {
+        "name": "竹板",
+        "price": 958
+      },
+      "type3": {
+        "name": "露水河",
+        "price": 558
+      }
+    },
+    "downBody": {
+      "type1": {
+        "name": "多层板",
+        "price": 768
+      },
+      "type2": {
+        "name": "竹板",
+        "price": 1158
+      },
+      "type3": {
+        "name": "露水河",
+        "price": 628
+      }
+    }
+  },
+  "wardrobe": {
+  	"body": {
+  		"type1": {
+        "name": "多层板",
+        "price": 248
+      },
+      "type2": {
+        "name": "竹板",
+        "price": 468
+      },
+      "type3": {
+        "name": "露水河",
+        "price": 168
+      },
+      "type4": {
+        "name": "松木直拼板",
+        "price": 358
+      }
+  	},
+  	"door": {
+  		"type1": {
+        "name": "模压门",
+        "price": 378
+      },
+      "type2": {
+        "name": "烤漆门",
+        "price": 438
+      },
+      "type3": {
+        "name": "晶钢门",
+        "price": 578
+      },
+      "type4": {
+        "name": "橡胶木",
+        "price": 758
+      },
+      "type5": {
+        "name": "南美樱桃",
+        "price": 1078
+      },
+      "type6": {
+        "name": "美国红橡",
+        "price": 1158
+      },
+      "type7": {
+        "name": "北美樱桃",
+        "price": 1358
+      }
+  	}
+  }
+}

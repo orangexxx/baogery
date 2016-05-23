@@ -1,0 +1,58 @@
+{{extend("../base")}}
+{{#block ("head")}}
+	<link href="/css/budget/index.css" rel="stylesheet">
+{{/block}}
+{{#block ("header")}}
+	{{include ('../header', {menu: "预算助手"})}}
+{{/block}}
+{{#block ("body")}}
+<div class="container budget-form">
+	<form class="form-horizontal" method="post" action="#">
+		<div class="user-info">
+			<div class="form-group">
+	 			<label for="username" class="col-sm-3 control-label">顾客姓名：</label>
+	 			<div class="col-sm-9">
+	 				<input class="form-control" id="username" name="username" placeholder="张三">
+	 			</div>
+			</div>
+			<div class="form-group">
+				<label for="phone" class="col-sm-3 control-label">联系方式：</label>
+				<div class="col-sm-9">
+					<input class="form-control" id="phone" name="phone" placeholder="15925691513">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="addr" class="col-sm-3 control-label">顾客小区：</label>
+				<div class="col-sm-9">
+					<input class="form-control" id="addr" name="addr" placeholder="万科西庐">
+				</div>
+			</div>
+		</div>
+		<ul class="nav nav-tabs">
+		  <li role="presentation" class="active" data-tag="chugui-form" data-type="cupboard"><a>橱柜</a></li>
+		  <li role="presentation" data-tag="yigui-form" data-type="wardrobe"><a>衣柜</a></li>
+		</ul>
+		<input type="hidden" name="type" value="cupboard" class="formType">
+		<div class="tab-container">
+			<div class="chugui-form tab-box">
+				{{include ("./cupboard")}}
+			</div>
+			<div class="yigui-form tab-box">
+				{{include ("./wardrobe")}}
+			</div>
+		</div>
+		<div class="form-group discount-form">
+			<label for="discount" class="control-label col-sm-2">折扣：</label>
+			<div class="col-sm-4">
+				<input class="form-control" id="discount" name="discount">
+			</div>
+		</div>
+		<button type="submit" class="submit btn  btn-primary">提交</button>
+	</form>
+</div>
+{{/block}}
+{{#block ("js")}}
+<script src="/js/utils/jquery.validate.min.js"></script>
+<script src="/js/budget/index.js"></script>
+
+{{/block}}

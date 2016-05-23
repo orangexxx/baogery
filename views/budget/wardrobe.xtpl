@@ -1,0 +1,66 @@
+<div class="form-group">
+					<label for="yiWidth" class="control-label">衣柜宽度：(单位：米)</label>
+					<input class="form-control yi" id="yiWidth" name="yiWidth">
+				</div>
+				<div class="form-group">
+					<label for="yiHeight" class="control-label">衣柜高度：(单位：米)</label>
+					<input class="form-control yi" id="yiHeight" name="yiHeight">
+				</div>
+				<div class="form-group">
+					<label for="yiParam" class="control-label">投影系数：(默认3.2)</label>
+					<input class="form-control yi" id="yiParam" name="yiParam">
+				</div>
+				<div class="form-group">
+					<label for="yiBodyType" class="control-label">柜体类型：</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="yiBodyType" id="type1" value="type1" checked>
+							多层板
+						</label>
+						<label>
+							<input type="radio" name="yiBodyType" id="type2" value="type2">
+							竹子
+						</label>
+						<label>
+							<input type="radio" name="yiBodyType" id="type3" value="type3">
+							露水河
+						</label>
+						<label>
+							<input type="radio" name="yiBodyType" id="type4" value="type4">
+							松木直拼板
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="yiDoorType" class="control-label">门板类型：</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="yiDoorType" id="type1" value="type1" checked>
+							模压
+						</label>
+						<label>
+							<input type="radio" name="yiDoorType" id="type2" value="type2">
+							烤漆
+						</label>
+						<label>
+							<input type="radio" name="yiDoorType" id="type3" value="type3">
+							晶钢
+						</label>
+						<label>
+							<input type="radio" name="yiDoorType" id="type4" value="type4">
+							橡胶木
+						</label>
+						<label>
+							<input type="radio" name="yiDoorType" id="type5" value="type5">
+							南美樱桃
+						</label>
+						<label>
+							<input type="radio" name="yiDoorType" id="type6" value="type6">
+							美国红橡
+						</label>
+						<label>
+							<input type="radio" name="yiDoorType" id="type7" value="type7">
+							北美樱桃
+						</label>
+					</div>
+				</div>
